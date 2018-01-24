@@ -17,11 +17,15 @@ html {
 
 /* HEADER SECTION */
 
-header {
-  display: flex;
-  justify-content: center;
+.company-name {
   background-color: black;
-  width: 100%;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+.company-name .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -36,66 +40,58 @@ header {
 
 
 .company-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image:
     url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 25rem;
+  /*width: auto; */  /*check this if setting width changes anything in mobile mode */
 }
 
+.company-section .container {
+  position: relative;
+  top: 9rem;
+}
 
-.main-content {
+.headline {
   width: 20rem;
   background-color: black;
   padding: 2rem 3rem;
-  margin-top: 9rem;
-  text-align: left;
-
 }
 
-.main-content h3 {
-  font-size: 1rem;
+.headline h3,
+.headline h1 {
   font-weight: bold;
 }
 
-.main-content h1 {
+.headline h1 {
   font-size: 2rem;
-  font-weight: bold;
   margin-top: .25rem;
 }
 
+
 /* MENU SECTION */
 
+.mobile {
+  display: none;
+}
+
+
 .menu-section {
-  display: flex;
-  justify-content: center;
   background-color: firebrick;
   padding-top: .75rem;
   padding-bottom: .75rem;
 }
 
-.menu-content {
+nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {} WILL DISPLAY "MENU" TEXT */
   display: flex;
   justify-content: space-between;
-  width: 960px;
 }
 
-/* MIDDLE SECTION */
 
-.middle-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  width: 100%;
-}
 
+/* INVENTORY SECTION */
 
 
 .inventory {
@@ -107,42 +103,29 @@ header {
 .contact {
   display: flex;
   justify-content: space-between;
-
 }
 
-.content-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 4px solid black;
-  width: 30%;
-
-}
-
-.content-image img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-
-  padding: 2rem
-}
 
 .text {
   background-color: black;
 }
 
-.contact h3 {
+/* CONTACT SECTION */
+
+
+.info h3 {
   color: black;
 }
 
-.contact .contact-text {
+.info {
+  width: 30%;
+}
+
+.info .contact-text {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
-  width: 100%;
 }
-
 
 /* FOOTER SECTION */
 
