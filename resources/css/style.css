@@ -4,10 +4,14 @@ html {
   font-size: 18px;
   color: white;
   font-family: Helvetica;
-  text-align: center;  /* just in case remove this along with text-align in footer-content */
+  /*text-align: center just in case remove this along with text-align in footer-content */
 
 }
 
+.container {  /* change to container only */
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 
 
@@ -18,17 +22,6 @@ header {
   justify-content: center;
   background-color: black;
   width: 100%;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  width: 960px;
-  padding: .66rem 0;
-}
-
-.header-content span {
-  font-size: 1rem;
 }
 
 .logo {
@@ -42,7 +35,7 @@ header {
 /* MAIN SECTION */
 
 
-.main-section {
+.company-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,9 +47,6 @@ header {
   height: 25rem;
 }
 
-.main-container {
-  width: 960px;
-}
 
 .main-content {
   width: 20rem;
@@ -103,11 +93,10 @@ header {
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  width: 100%;
 }
 
-.container-width {
-  width: 960px;
-}
+
 
 .inventory {
   display: flex;
@@ -118,7 +107,7 @@ header {
 .contact {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .content-image {
@@ -158,14 +147,11 @@ header {
 /* FOOTER SECTION */
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 2.5rem 0;
   background-color: black;
-  height: 5rem;
+  padding: 5rem;
 }
 
-.footer-content {
-  width: 960px;
+.copyright .container {
   text-align: left;
 }

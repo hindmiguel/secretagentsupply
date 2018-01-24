@@ -10,8 +10,8 @@
 
 <!-- HEADER -->
 
-    <header>
-      <div class="header-content">
+    <header class="company-name">
+      <div class="container">   <!-- this div is to set div max width -->
         <img class="logo" src="./resources/images/logo.png">
         <span>Secret Agent Supply Inc.</span>
       <div>
@@ -19,9 +19,9 @@
 
 <!-- MAIN SECTION -->
 
-    <div class="main-section">
-      <div class="main-container">
-        <div class="main-content">
+    <div class="company-section"> <!-- this div is to set backgournd image -->
+      <div class="container">     <!-- this div is to set container max width -->
+        <div class="headline">   <!-- this div tis to set background color to only cover the text -->
           <h3>NEW ARRIVAL</h3>
           <h1>SPORT BIKES AND MOTORCYCLES</h1>
         </div>
@@ -30,50 +30,59 @@
 
 <!-- MENU SECTION -->
 
-    <div class="menu-section">
-      <nav class="menu-content">
-        <span>Eyewear</span>
-        <span>Apparel</span>
-        <span>Gadgets</span>
-        <span>Vehicles</span>
-        <span>Classes</span>
-        <span>Contact</span>
-      </nav>
-    </div>
+    <nav class="menu-section">
+      <ul class="container">
+        <li>Eyewear</li>
+        <li>Apparel</li>
+        <li>Gadgets</li>
+        <li>Vehicles</li>
+        <li>Classes</li>
+        <li>Contact</li>
+      </ul>
+      <ul class="mobile container">  <!-- this is to set max width and set container w/in nav section when not in use -->
+        <li>Menu</li>
+      </ul>
+    </nav>
 
 <!-- MIDDLE SECTION -->
 
-    <div class="middle-section">
-      <div class="container-width">
-        <div class="inventory">
-          <div class="content-image">
+    <div class="container">
+      <div class="inventory">
+          <div class="product-image">
             <img src="./resources/images/pen.png">
             <h3 class="text">Exploding Pen</h3>
           </div>
-          <div class="content-image">
+          <div class="product watch">  <!-- this .watch to set display to none when in mobile screen -->
             <img src="./resources/images/watch.png">
             <h3 class="text">Cellular Watch</h3>
           </div>
-          <div class="content-image">
-            <img src="./resources/images/glasses.png">
+          <div class="product glasses">
+            <img src="./resources/images/glasses.png"> <!-- this .glasses is to set display to none when screen smaller thatn 1024px -->
             <h3 class="text">Thermal Glasses</h3>
           </div>
         </div>
-        <div class="contact">
-          <div>
-            <h3 class="contact-text">Location</h3>
-            <h3>-47.346436, 84.32354</h3>
-          </div>
-          <div>
-            <h3 class="contact-text">Hours</h3>
-            <h3>0800 - 1800</h3>
-          </div>
+    </div>
+
+
+
+    <div class="contact">
+      <div class="container">
+        <div>
+          <h3 class="contact-text">Location</h3>
+          <h3>-47.346436, 84.32354</h3>
+        </div>
+        <div>
+          <h3 class="contact-text">Hours</h3>
+          <h3>0800 - 1800</h3>
         </div>
       </div>
     </div>
 
+<!-- FOOTER SECTION -->
+
+
     <footer class="copyright">
-      <div class="footer-content"
+      <div class="container">
         <h3>Copyright Secret Agent Supply Inc.</h3>
       </div>
     </footer>
