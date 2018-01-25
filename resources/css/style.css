@@ -226,9 +226,9 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
 /* FOOTER SECTION */
 
 .copyright {
-  margin: 2.5rem 0;
+  margin-top: 4rem;
   background-color: black;
-  padding: 5rem;
+  padding: 5rem 0;  /*left and right padding is set to "0" to aling text properly to the left */ 
 }
 
 .copyright .container {
