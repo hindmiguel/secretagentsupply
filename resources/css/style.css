@@ -73,6 +73,18 @@ html {
 
 /* MENU SECTION */
 
+@media only screen and (max-width: 1024px) {
+  .menu-section ul {
+    display: none;
+  }
+
+  .menu-section .mobile {
+    display: block;
+    text-align: center;
+  }
+}
+
+
 .mobile {
   display: none;
 }
@@ -94,21 +106,49 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
 /* INVENTORY SECTION */
 
 
+@media only screen and (max-width: 1024px) {
+  .inventory .product {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
 .inventory {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
-.contact {
+.product {
+  width: 30%;
+}
+
+.product-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black; /*this sets the div of the img and not the div including the img + text*/
+  height: 9rem;   /*this sets the height limit for the image inside the div*/
+  padding: 2rem;  /*this sets padding (space) around the image*/
 }
 
+.product img {
+  /*height: 9rem*/ /* if this was set the image would be unproportional*/
+  max-width: 8rem;
+}
 
 .text {
   background-color: black;
+  padding: .5rem 0 .5rem 0;
+  text-align: center
 }
+
+
 
 /* CONTACT SECTION */
 
@@ -119,6 +159,28 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
 
 .info {
   width: 30%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .info {
+    width: 90%;
+    margin: .5rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+
+
+
 }
 
 .info .contact-text {
@@ -137,4 +199,10 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
 
 .copyright .container {
   text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright .container {
+    text-align: center;
+  }
 }
