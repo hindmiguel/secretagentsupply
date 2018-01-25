@@ -15,28 +15,52 @@ html {
 
 
 
-/* HEADER SECTION */
+/* COMPANY-NAME SECTION */
 
 .company-name {
   background-color: black;
-  padding-top: .66rem;
-  padding-bottom: .66rem;
+
 }
 
 .company-name .container {
   display: flex;
   align-items: center;
+  padding: .66rem 0 .66rem .5rem;
 }
 
 .logo {
   height: 1.5rem;
-  margin-left: .5rem;
   margin-right: 1rem;
 }
 
 
 
 /* MAIN SECTION */
+
+
+@media only screen and (max-width: 470px) {
+  .company-section {
+    max-height: 15rem;
+  }
+
+  .company-section .container {
+    top: 10rem;
+  }
+
+  .container .headline {
+    width: 100%;
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  .container .headline h1 {
+  font-size: 1rem;
+}
+
+  .container .headline h3 {
+    font-size: .77rem;
+  }
+
+}
 
 
 .company-section {
@@ -46,7 +70,6 @@ html {
   background-size: cover;
   background-position: center;
   height: 25rem;
-  /*width: auto; */  /*check this if setting width changes anything in mobile mode */
 }
 
 .company-section .container {
@@ -116,6 +139,20 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
   }
 }
 
+@media only screen and (max-width: 470px) {
+  .watch,
+  .glasses {
+    display: none;
+  }
+
+  .inventory .product {
+    width: 90%;
+    margin: 0 auto;  /* this will center the div in the screen */
+  }
+
+}
+
+
 .inventory {
   display: flex;
   justify-content: space-between;
@@ -166,20 +203,17 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 480px) {
-  .info {
+@media only screen and (max-width: 470px) {
+  .container .info {
     width: 90%;
     margin: .5rem;
   }
 
   .contact {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-
   }
-
-
-
 
 }
 
@@ -201,7 +235,7 @@ nav ul {    /* USING EITHER .menu-section ul {} -or- .menu-section .container {}
   text-align: left;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 470px) {
   .copyright .container {
     text-align: center;
   }
